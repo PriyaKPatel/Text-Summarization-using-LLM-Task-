@@ -1,7 +1,7 @@
 # Text Summarization 
 
 
-### **Step 1: Setup Virtual Environment & Install Dependencies (5 minutes)**
+### **Step 1: Setup Virtual Environment & Install Dependencies**
 
 ```bash
 # Create virtual environment
@@ -27,7 +27,7 @@ chmod +x run.sh
 - streamlit (Web UI)
 - pandas (Data handling)
 
-### **Step 2: Run Jupyter Notebook (20 minutes)**
+### **Step 2: Run Jupyter Notebook**
 
 ```bash
 # Make sure virtual environment is activated
@@ -41,7 +41,7 @@ jupyter notebook demo.ipynb
 ```
 
 
-### **Step 3: Run Web App (5 minutes)**
+### **Step 3: Run Web App**
 
 ```bash
 # Make sure virtual environment is activated
@@ -61,7 +61,7 @@ streamlit run app.py
 
 ## Usage
 
-### **Jupyter Notebook (Recommended)**
+### **Jupyter Notebook**
 
 ```bash
 jupyter notebook demo.ipynb
