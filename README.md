@@ -1,4 +1,6 @@
 # Text Summarization 
+## Overview
+Text summarization system using pre-trained transformer models to summarize news articles from the XSum dataset.
 
 
 ### **Step 1: Setup Virtual Environment & Install Dependencies**
