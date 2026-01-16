@@ -1,7 +1,7 @@
 # Text Summarization 
 
 
-### **Step 1: Setup Virtual Environment & Install Dependencies (5 minutes)**
+### **Step 1: Setup Virtual Environment & Install Dependencies**
 
 ```bash
 # Create virtual environment
@@ -27,7 +27,7 @@ chmod +x run.sh
 - streamlit (Web UI)
 - pandas (Data handling)
 
-### **Step 2: Run Jupyter Notebook (20 minutes)**
+### **Step 2: Run Jupyter Notebook**
 
 ```bash
 # Make sure virtual environment is activated
@@ -41,7 +41,7 @@ jupyter notebook demo.ipynb
 ```
 
 
-### **Step 3: Run Web App (5 minutes)**
+### **Step 3: Run Web App**
 
 ```bash
 # Make sure virtual environment is activated
@@ -56,54 +56,18 @@ streamlit run app.py
 
 **App opens at:** `http://localhost:8501`
 
-**Features:**
-- 📄 Summarize your text
-- 🎯 Try examples from XSum dataset
-- ⚖️ Compare models side-by-side
 
 ---
 
-## 📁 Files Included
+## Usage
 
-| File | Purpose |
-|------|---------|
-| **app.py** | Streamlit web app (localhost) |
-| **demo.ipynb** | Jupyter notebook demonstration |
-| **requirements.txt** | Dependencies |
-| **README.md** | This guide |
-
----
-
-## 🏆 Model Selection: BART-CNN
-
-### **Why BART-CNN? (Production Choice)**
-
-| Aspect | BART-CNN | PEGASUS-XSum |
-|--------|----------|--------------|
-| **Output** | 3-4 sentences ✅ | 1 sentence ❌ |
-| **Words** | ~45 words | ~12 words |
-| **Business Use** | High ✅ | Low ❌ |
-| **Industry** | Standard ✅ | Niche ⚠️ |
-
-**Example Output:**
-
-**BART:** "The company reported record earnings of $5B. Cloud services drove growth. CEO announced expansion plans."
-(Informative ✅)
-
-**PEGASUS:** "Company reports record earnings."
-(Too brief ❌)
-
----
-
-## 🚀 Usage
-
-### **Jupyter Notebook (Recommended)**
+### **Jupyter Notebook**
 
 ```bash
 jupyter notebook demo.ipynb
 ```
 
-Run all cells to see complete demonstration.
+
 
 ### **Streamlit App**
 
@@ -113,27 +77,8 @@ streamlit run app.py
 
 Opens at `http://localhost:8501`
 
----
 
-## 🔧 Troubleshooting
 
-**Import Error:**
-```bash
-pip install transformers datasets torch streamlit
-```
-
-**CUDA Error:**
-```python
-# Force CPU
-device = -1
-```
-
-**Port Busy:**
-```bash
-streamlit run app.py --server.port 8502
-```
-
----
 
 ## 
 
@@ -150,14 +95,3 @@ streamlit run app.py --server.port 8502
 **A:** Input → Tokenization → Model → Decoding → Summary (abstracts complexity)
 
 ---
-
-## ✅ Before Submitting
-
-- [ ] Notebook runs without errors
-- [ ] App accessible at localhost:8501
-- [ ] Screenshots captured
-- [ ] Understand BART-CNN choice
-
-**Total time: ~30 minutes**
-
-**Good luck! 🎉**
